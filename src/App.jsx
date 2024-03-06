@@ -1,8 +1,26 @@
 import React from "react";
-
+import { publicRoutes } from "./routes";
+import { Route, Routes } from "react-router-dom";
 const App = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Routes>
+        {publicRoutes.map((item, index) => {
+          console.log("hello");
+          return (
+            <Route
+              key={index}
+              path={item.path}
+              element={
+                <item.layout>
+                  <item.component></item.component>
+                </item.layout>
+              }
+            ></Route>
+          );
+        })}
+      </Routes>
+    </div>
+  );
 };
-
-<h1 className="text-[red]">Hello</h1>;
 export default App;
