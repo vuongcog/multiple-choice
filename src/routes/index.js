@@ -1,7 +1,7 @@
 import MainLayout from "../lib/layouts";
 import TestLayoutUser from "../lib/layouts/layout.test";
-import MainLayoutUser from "../lib/layouts/layouts.admin";
-import MainLayoutAdmin from "../lib/layouts/layouts.user";
+import MainLayoutAdmin from "../lib/layouts/layouts.admin";
+import MainLayoutUser from "../lib/layouts/layouts.user";
 import Admin from "./admin";
 import Homepage from "./hompage";
 import Test from "./test/Test";
@@ -14,12 +14,12 @@ export const publicRoutes = [
     layout: MainLayout,
   },
   {
-    path: "/homeuser",
+    path: "/user",
     component: User,
     layout: MainLayoutUser,
   },
   {
-    path: "/homeadmin",
+    path: "/admin",
     component: Admin,
     layout: MainLayoutAdmin,
   },

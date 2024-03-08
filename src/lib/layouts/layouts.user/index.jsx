@@ -1,7 +1,7 @@
 import React from "react";
 
-const MainLayoutAdmin = ({ children }) => {
+const MainLayoutUser = ({ children }) => {
   return <div>{children}</div>;
 };
 
-export default MainLayoutAdmin;
+export default MainLayoutUser;
