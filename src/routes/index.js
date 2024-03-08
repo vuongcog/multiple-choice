@@ -4,6 +4,7 @@ import MainLayoutAdmin from "../lib/layouts/layouts.admin";
 import MainLayoutUser from "../lib/layouts/layouts.user";
 import Admin from "./admin";
 import Homepage from "./hompage";
+import Hello from "./test/Hello";
 import Test from "./test/Test";
 import User from "./user";
 
@@ -25,7 +26,7 @@ export const publicRoutes = [
   },
   {
     path: "/test",
-    component: TestLayoutUser,
+    component: Hello,
     layout: Test,
   },
 ];
