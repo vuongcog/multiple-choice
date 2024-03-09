@@ -1,7 +1,12 @@
 import React from "react";
+import Box from "./Box";
 
 const User = () => {
-  return <div>User</div>;
+  return (
+    <div>
+      <Box></Box>
+    </div>
+  );
 };
 
 export default User;
