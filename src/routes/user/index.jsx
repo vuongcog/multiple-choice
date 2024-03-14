@@ -1,10 +1,10 @@
+import { Button } from "@chakra-ui/react";
 import React from "react";
-import Box from "./Box";
 
 const User = () => {
   return (
     <div>
-      <Box></Box>
+      <Button>Chakra</Button>
     </div>
   );
 };
