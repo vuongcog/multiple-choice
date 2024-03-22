@@ -6,6 +6,7 @@ import Admin from "./routes/admin";
 import CreateGame from "./routes/admin/creategame";
 import MainLayoutUser from "./lib/layouts/layouts.user";
 import User from "./routes/user";
+import Listclass  from "./routes/user/Listclass";
 const App = () => {
   return (
     <Routes>
@@ -34,6 +35,14 @@ const App = () => {
           </MainLayoutAdmin>
         }
       ></Route>
+          <Route 
+            path="/listclass" 
+            element={
+              <MainLayoutUser>
+                <Listclass></Listclass>
+              </MainLayoutUser>
+            }
+          ></Route>
     </Routes>
   );
 };
